@@ -8,6 +8,7 @@ const GlobalStyle = createGlobalStyle`
         padding: 0;
         text-decoration: none;
         color: ${({theme})=> theme.text};
+        transition: all .5s ease;
     }
 `;
 

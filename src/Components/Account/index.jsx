@@ -12,7 +12,7 @@ const IconoMargin = styled(Icono)`
 `
 
 const Account = () => {
-  const [toggleState, untoggle] = useState(true);
+  const [toggleState, untoggle] = useState(false);
 
   const toggleHandler = () => {
     untoggle((toggleState) => !toggleState);
