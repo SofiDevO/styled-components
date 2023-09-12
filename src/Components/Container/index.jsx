@@ -1,17 +1,35 @@
 import React from "react";
-
+import styled from "styled-components";
 import Title from "../Title";
 import Account from "../Account";
+import List from "../List";
+
+const StyledContainer = styled.div`
+	background-color: rgb(244, 244, 244);
+	min-height: 90vh;
+	padding: 0px 15vw;
+`;
+const StyledContent = styled.div`
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	@media (max-width: 800px) {
+		flex-direction: column;
+	}
+`;
 
 const Container = () => {
-  return (
-    <div className="container">
-      <Title>Smart Bank</Title>
-      <section className="content">
-        <Account />
-      </section>
-    </div>
-  );
+	return (
+		<StyledContainer className="container">
+			<Title>Smart Bank</Title>
+			<StyledContent className="content">
+				<Account />
+				<List/>
+			</StyledContent>
+		</StyledContainer>
+	);
 };
 
 export default Container;
+
+
